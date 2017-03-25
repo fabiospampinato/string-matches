@@ -24,7 +24,7 @@ stringMatches ( str, regex ).length; // 2
 
 ## Related
 
-- [string-replace-all](https://github.com/fabiospampinato/string-replace-all) - Replaces all the occurrencies of a string into a string with another string.
+- [string-replace-all](https://github.com/fabiospampinato/string-replace-all) - Replaces all the occurrences of a string into a string with another string.
 
 ## License
 
