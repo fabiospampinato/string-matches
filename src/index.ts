@@ -7,6 +7,8 @@ function stringMatches ( str: string, regex: RegExp ): RegExpExecArray[] {
 
   let match;
 
+  regex.lastIndex = 0;
+
   while ( match = regex.exec ( str ) ) {
 
     matches.push ( match );
