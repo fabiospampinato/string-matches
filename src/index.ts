@@ -1,7 +1,7 @@
 
 /* STRING MATCHES */
 
-function stringMatches ( str: string, regex: RegExp ): RegExpExecArray[] {
+function stringMatches ( str: string, regex: RegExp, maxMatches = Infinity ): RegExpExecArray[] {
 
   if ( regex.flags.indexOf ( 'g' ) >= 0 ) {
 
@@ -14,6 +14,8 @@ function stringMatches ( str: string, regex: RegExp ): RegExpExecArray[] {
     while ( match = regex.exec ( str ) ) {
 
       matches.push ( match );
+
+      if ( matches.length === maxMatches ) break;
 
     }
 

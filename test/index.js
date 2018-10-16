@@ -28,4 +28,13 @@ describe ( 'stringMatches', it => {
 
   });
 
+  it ( 'Can limit the number of matches', t => {
+
+    const test = 'A tidy tiger tied a tighter tie to tidy her tiny tail',
+          matches = stringMatches ( test, /ti/g, 2 );
+
+    t.is ( matches.length, 2 );
+
+  });
+
 });
