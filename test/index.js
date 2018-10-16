@@ -19,4 +19,13 @@ describe ( 'stringMatches', it => {
 
   });
 
+  it ( 'Work with non-global regexes too', t => {
+
+    const test = 'A tidy tiger tied a tighter tie to tidy her tiny tail',
+          matches = stringMatches ( test, /tidy/ );
+
+    t.is ( matches.length, 1 );
+
+  });
+
 });

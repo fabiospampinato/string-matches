@@ -3,19 +3,29 @@
 
 function stringMatches ( str: string, regex: RegExp ): RegExpExecArray[] {
 
-  const matches: RegExpExecArray[] = [];
+  if ( regex.flags.indexOf ( 'g' ) >= 0 ) {
 
-  let match;
+    const matches: RegExpExecArray[] = [];
 
-  regex.lastIndex = 0;
+    let match;
 
-  while ( match = regex.exec ( str ) ) {
+    regex.lastIndex = 0;
 
-    matches.push ( match );
+    while ( match = regex.exec ( str ) ) {
+
+      matches.push ( match );
+
+    }
+
+    return matches;
+
+  } else {
+
+    const match = regex.exec ( str );
+
+    return match ? [match] : [];
 
   }
-
-  return matches;
 
 }
 
