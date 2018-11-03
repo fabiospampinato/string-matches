@@ -1,8 +1,5 @@
 # stringMatches
 
-![Issues](https://img.shields.io/github/issues/fabiospampinato/string-matches.svg)
-[![NPM version](https://img.shields.io/npm/v/string-matches.svg)](https://www.npmjs.com/package/string-matches)
-
 Retrieves all the matches of a regex in a string.
 
 ## Install
