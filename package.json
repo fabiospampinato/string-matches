@@ -35,10 +35,7 @@
     "url": "https://github.com/fabiospampinato/string-matches.git"
   },
   "keywords": [],
-  "dependencies": {
-    "@types/lodash": "^4.14.58",
-    "lodash": "^4.17.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "ava": "^0.18.2",
     "ava-spec": "^1.1.0",
