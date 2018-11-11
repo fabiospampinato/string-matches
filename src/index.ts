@@ -33,4 +33,4 @@ function stringMatches ( str: string, regex: RegExp, maxMatches = Infinity ): Re
 
 /* EXPORT */
 
-export = Object.assign ( stringMatches, { default: stringMatches } );
+export default stringMatches;
