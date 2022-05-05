@@ -1,7 +1,7 @@
 
-/* STRING MATCHES */
+/* MAIN */
 
-function stringMatches ( str: string, regex: RegExp, maxMatches = Infinity ): RegExpExecArray[] {
+const stringMatches = ( str: string, regex: RegExp, maxMatches = Infinity ): RegExpExecArray[] => {
 
   if ( regex.flags.indexOf ( 'g' ) >= 0 ) {
 
@@ -29,7 +29,7 @@ function stringMatches ( str: string, regex: RegExp, maxMatches = Infinity ): Re
 
   }
 
-}
+};
 
 /* EXPORT */
 
