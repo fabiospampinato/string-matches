@@ -5,7 +5,7 @@ Retrieves all the matches of a regex in a string.
 ## Install
 
 ```shell
-$ npm install --save string-matches
+npm install --save string-matches
 ```
 
 ## Usage
@@ -13,8 +13,8 @@ $ npm install --save string-matches
 ```js
 import stringMatches from 'string-matches';
 
-const str = 'A tidy tiger tied a tighter tie to tidy her tiny tail',
-      regex = /tidy/g; // Don't forget the `g` flag, or it won't work
+const str = 'A tidy tiger tied a tighter tie to tidy her tiny tail';
+const regex = /tidy/g; // Don't forget the `g` flag, or it won't work
 
 stringMatches ( str, regex ).length; // 2
 ```

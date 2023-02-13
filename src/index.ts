@@ -3,7 +3,7 @@
 
 const stringMatches = ( str: string, regex: RegExp, maxMatches = Infinity ): RegExpExecArray[] => {
 
-  if ( regex.flags.indexOf ( 'g' ) >= 0 ) {
+  if ( regex.global ) {
 
     const matches: RegExpExecArray[] = [];
 
