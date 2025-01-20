@@ -17,7 +17,6 @@ import stringMatches from 'string-matches';
 
 const str = 'A tidy tiger tied a tighter tie to tidy her tiny tail';
 const regex = /tidy/g; // Don't forget the `g` flag, or it won't work
-
 const matches = stringMatches ( str, regex );
 
 console.log ( matches.length ); // => 2
